@@ -39,7 +39,15 @@ def processed_img(img_path):
     return res.capitalize()
 
 def run():
-    st.title("Fruits🍍-Vegetable🍅 Classification")
+    st.title("Fruit🍍 Detection And Calorie,Fat Estimation")
+    st.sidebar.title('Participant Name')
+    st.sidebar.text('Ashutosh Kumar - 19ucc082')
+    st.sidebar.text('Vaibhav Pradhan - 19ucc122')
+
+    
+
+ 
+    
     img_file = st.file_uploader("Choose an Image", type=["jpg", "png"])
     if img_file is not None:
         img = Image.open(img_file).resize((250,250))
